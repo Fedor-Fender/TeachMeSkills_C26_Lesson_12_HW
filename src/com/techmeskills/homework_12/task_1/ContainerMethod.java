@@ -15,7 +15,7 @@ public class ContainerMethod {
         Matcher matcher = pattern.matcher(str);// подчеркивает str красным?
         while (matcher.find()) { // правильный ли здесь цикл
             String match = matcher.group();
-            System.out.println("найдена абривеатура:"+match);
+            System.out.println("Find abbreviation:"+match);
         }
     }
 }
