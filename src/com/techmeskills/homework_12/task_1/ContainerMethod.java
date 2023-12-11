@@ -12,10 +12,12 @@ public class ContainerMethod {
         String[] str = nameAbbreviation.split("\\s");
 
         Pattern pattern = Pattern.compile(REGEX);
-        Matcher matcher = pattern.matcher(str);// подчеркивает str красным?
-        while (matcher.find()) { // правильный ли здесь цикл или нужен цикл "for"?
-            String match = matcher.group();
-            System.out.println("Find abbreviation:"+match);
+
+        for (String string:str){
+            Matcher matcher = pattern.matcher(string);
+            if (matcher.find()) {
+                System.out.println("Find abbreviation:"+matcher.group());
+            }
         }
     }
 }
