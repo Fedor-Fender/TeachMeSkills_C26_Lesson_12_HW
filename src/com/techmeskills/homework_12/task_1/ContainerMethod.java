@@ -13,7 +13,7 @@ public class ContainerMethod {
 
         Pattern pattern = Pattern.compile(REGEX);
         Matcher matcher = pattern.matcher(str);// подчеркивает str красным?
-        while (matcher.find()) { // правильный ли здесь цикл
+        while (matcher.find()) { // правильный ли здесь цикл или нужен цикл "for"?
             String match = matcher.group();
             System.out.println("Find abbreviation:"+match);
         }
